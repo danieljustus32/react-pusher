@@ -3,6 +3,10 @@ let channels = new Pusher('65901c15ec569489ac03', {
   cluster: 'us2'
 })
 
+// Note: The app key and cluster are exposed on the client and not 
+// sensitive. If app secret or app ID are needed, these are exposed
+// as `now` environment variables e.g. '@[APP_NAME]-app-id'
+
 // Subscribe to the appropriate channel
 let channel = channels.subscribe('channel-name')
 
@@ -23,3 +27,5 @@ async function pushData(data) {
     console.error('failed to push data')
   }
 }
+
+module.exports = { pushData }
