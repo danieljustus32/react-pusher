@@ -1,6 +1,6 @@
 // Initialize Channels client
-let channels = new Pusher('app-key', {
-  cluster: 'cluster-region'
+let channels = new Pusher('65901c15ec569489ac03', {
+  cluster: 'us2'
 })
 
 // Subscribe to the appropriate channel
