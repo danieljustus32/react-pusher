@@ -27,5 +27,3 @@ async function pushData(data) {
     console.error('failed to push data')
   }
 }
-
-module.exports = { pushData }
