@@ -8,30 +8,30 @@ import {
 
 const NavBar = () => {
   const { isAuthenticated, loginWithRedirect, logout } = useAuth0();
-  const [activeItem, setActiveItem] = useState("home");
+  const [activeItem, setActiveItem] = useState(window.location.href);
+  
   
   return (
     <Menu> 
-        <Menu.Item
-          as={Link}
-          to="/"
-          name="home"
-          active={activeItem === "home"}
-          onClick={() => setActiveItem("home")}
-        >
-          
-        </Menu.Item>
-      {isAuthenticated && (   
-        <Menu.Item
-          as={Link}
-          to="/profile"
-          name="profile"
-          active={activeItem === "profile"}
-          onClick={() => setActiveItem("profile")}
-        >
-        </Menu.Item>
-      )}
-      
+      <Menu.Item
+        as={Link}
+        to="/"
+        name="home"
+        /* The regexp in the next line matches url params that are added when redirecting from the Auth0 login page */
+        active={activeItem === process.env.REACT_APP_URL || activeItem.includes(process.env.REACT_APP_URL + "?code=")}
+        onClick={() => setActiveItem(process.env.REACT_APP_URL)}
+      >         
+      </Menu.Item>
+    {isAuthenticated && (   
+      <Menu.Item
+        as={Link}
+        to="/profile"
+        name="profile"
+        active={activeItem === process.env.REACT_APP_URL + "profile"}
+        onClick={() => setActiveItem(process.env.REACT_APP_URL + "profile")}
+      >
+      </Menu.Item>
+    )}  
       <Menu.Item position="right">
       {!isAuthenticated && (
         <Button primary onClick={() => loginWithRedirect({})}>Log in</Button>
