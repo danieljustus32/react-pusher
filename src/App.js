@@ -3,6 +3,8 @@ import NavBar from "./components/NavBar";
 import PrivateRoute from "./components/PrivateRoute";
 
 import { Router, Route, Switch } from "react-router-dom";
+// Pages
+import Home from "./components/Home"
 import Profile from "./components/Profile";
 import History from "./utils/History";
 
@@ -14,7 +16,7 @@ const App = () => {
           <NavBar />
         </header>
         <Switch>
-          <Route path="/" exact />
+          <Route path="/" component={Home} exact />
           <PrivateRoute path="/profile" component={Profile} />
         </Switch>
       </Router>

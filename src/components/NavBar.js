@@ -8,6 +8,7 @@ import {
 
 const NavBar = () => {
   const { isAuthenticated, loginWithRedirect, logout } = useAuth0();
+  // TODO: Probably use window.location.pathname here
   const [activeItem, setActiveItem] = useState(window.location.href);
   
   
@@ -17,7 +18,6 @@ const NavBar = () => {
         as={Link}
         to="/"
         name="home"
-        /* The regexp in the next line matches url params that are added when redirecting from the Auth0 login page */
         active={activeItem === process.env.REACT_APP_URL || activeItem.includes(process.env.REACT_APP_URL + "?code=")}
         onClick={() => setActiveItem(process.env.REACT_APP_URL)}
       >         
