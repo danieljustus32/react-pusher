@@ -19,25 +19,23 @@ const Home = () => {
 
   return (
     <Fragment>
-      
-        <section id="hero">
-          <div id="hero-overlay">
-          </div>
-          <div id="login-request-container">
-          {!user && (  
-            <Message id="login-request" header="Welcome!" content="Please log in or sign up to access all features of this app." icon="user circle" />
-          )}
-          </div>
-          <h1 id="hero-header">Your Brand Here</h1>
-          <p id="learn-more">Learn More</p>
-          <div id="divider-container">
-            <hr id="divider" />
-          </div>
-          <div id="chevron-container">
-            <img id="downward-chevron" src={chevron} height="50px" alt="A downward-facing arrow" />
-          </div>
-        </section>
-    
+      <section id="hero">
+        <div id="hero-overlay">
+        </div>
+        <div id="login-request-container">
+        {!user && (  
+          <Message id="login-request" header="Welcome!" content="Please log in or sign up to access all features of this app." icon="user circle" />
+        )}
+        </div>
+        <h1 id="hero-header">Your Brand Here</h1>
+        <p id="learn-more">Learn More</p>
+        <div id="divider-container">
+          <hr id="divider" />
+        </div>
+        <div id="chevron-container">
+          <img id="downward-chevron" src={chevron} height="50px" alt="A downward-facing arrow" />
+        </div>
+      </section>  
       <div className="page-content">
         <div className="card-left-section-container">
           <Card className="homepage-card" data-aos="fade-right" data-aos-anchor-placement="bottom-bottom">
