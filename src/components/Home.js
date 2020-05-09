@@ -5,6 +5,7 @@ import {
   Image,
   Message
 } from "semantic-ui-react";
+import chevron from "../images/chevron.svg"
 
 const Home = () => {
   const { loading, user } = useAuth0();
@@ -22,10 +23,15 @@ const Home = () => {
         )}
         </div>
         <h1>Hero Header</h1>
+        <h4 id="learn-more">Learn More</h4>
+        <hr width="140px"/>
+        <div id="chevron-container">
+          <img id="downward-chevron" src={chevron} height="50px" alt="A downward-facing arrow" />
+        </div>
       </section>
       <div className="page-content">
         <div className="card-left-section-container">
-          <Card data-aos="fade-left" data-aos-anchor-placement="bottom-bottom">
+          <Card className="homepage-card" data-aos="fade-left" data-aos-anchor-placement="bottom-bottom">
             <Card.Content>
               <Card.Header>Always Available</Card.Header>
               <Card.Description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec posuere ligula. Pellentesque nisl odio, eleifend quis ligula sit amet, sagittis maximus lectus. 
@@ -55,7 +61,7 @@ const Home = () => {
               <li>Get your brand in front of as many potential customers as possible</li>
             </ul>
           </div>
-          <Card data-aos="fade-right" data-aos-anchor-placement="bottom-bottom">
+          <Card className="homepage-card" data-aos="fade-right" data-aos-anchor-placement="bottom-bottom">
             <Card.Content>
               <Card.Header>Always Acessible</Card.Header>
               <Card.Description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec posuere ligula. Pellentesque nisl odio, eleifend quis ligula sit amet, sagittis maximus lectus. 
@@ -69,7 +75,7 @@ const Home = () => {
           </Card>
         </div>
         <div className="card-left-section-container">
-          <Card data-aos="fade-left" data-aos-anchor-placement="bottom-bottom">
+          <Card className="homepage-card" data-aos="fade-left" data-aos-anchor-placement="bottom-bottom">
             <Card.Content>
               <Card.Header>Always Up-To-Date</Card.Header>
               <Card.Description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec posuere ligula. Pellentesque nisl odio, eleifend quis ligula sit amet, sagittis maximus lectus. 

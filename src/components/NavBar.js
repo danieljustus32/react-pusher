@@ -13,8 +13,9 @@ const NavBar = () => {
   
   
   return (
-    <Menu> 
+    <Menu id="navbar" borderless> 
       <Menu.Item
+        className="navlink"
         as={Link}
         to="/"
         name="home"
@@ -24,6 +25,7 @@ const NavBar = () => {
       </Menu.Item>
     {isAuthenticated && (   
       <Menu.Item
+        className="navlink"
         as={Link}
         to="/profile"
         name="profile"
@@ -32,13 +34,13 @@ const NavBar = () => {
       >
       </Menu.Item>
     )}  
-      <Menu.Item position="right">
+      <Menu.Item position="right" id="auth-button">
       {!isAuthenticated && (
         <Button primary onClick={() => loginWithRedirect({})}>Log in</Button>
       )}
       {isAuthenticated && <Button onClick={() => logout()}>Log out</Button>}
       </Menu.Item>
-      </Menu>
+    </Menu>
   );
 };
 
