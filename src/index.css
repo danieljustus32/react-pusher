@@ -39,6 +39,10 @@ h1 {
   justify-content: center;
 }
 
+.ui.primary.button {
+  background-color: #692CD1;
+}
+
 /* Loading wheel */
 .loading-wheel {
   animation: 1.2s ease-in-out infinite both loading-wheel-circle-animation;
@@ -139,8 +143,8 @@ h1 {
   width: 100%;
   justify-content: center;
   font-size: 1.5em;
-  font-weight: 100;
-  opacity: 0.7;
+  font-weight: 300;
+  opacity: 0.8;
 }
 
 #divider-container {
@@ -219,13 +223,28 @@ h1 {
 }
 
 /* Media Rules */
+
+@media only screen and (max-width: 1025px) {
+  .page-content {
+    padding: 0 10% 0;
+  }
+}
+
 @media only screen and (max-width: 769px) {
   h1 {
     font-size: 4em;
   }
   
+  #login-request-container {
+    padding: 2em 5% 0;
+  }
+
   #login-request {
-    width: 90%;
+    flex: 1;
+  }
+
+  #hero-header {
+    top: 20%;
   }
 
   #divider {

@@ -25,11 +25,11 @@ const Home = () => {
           </div>
           <div id="login-request-container">
           {!user && (  
-            <Message id="login-request" header="Welcome!" content="Please log in or sign up to access all features of this app." icon="user circle" compact />
+            <Message id="login-request" header="Welcome!" content="Please log in or sign up to access all features of this app." icon="user circle" />
           )}
           </div>
           <h1 id="hero-header">Your Brand Here</h1>
-          <h4 id="learn-more">Learn More</h4>
+          <p id="learn-more">Learn More</p>
           <div id="divider-container">
             <hr id="divider" />
           </div>
@@ -43,7 +43,7 @@ const Home = () => {
           <Card className="homepage-card" data-aos="fade-right" data-aos-anchor-placement="bottom-bottom">
             <Card.Content>
               <Card.Header>Always Available</Card.Header>
-              <Card.Meta>Never miss a sale</Card.Meta>
+              <Card.Meta>Never miss an opportunity</Card.Meta>
             </Card.Content>
             <Card.Content>
               <Card.Description>
@@ -80,12 +80,15 @@ const Home = () => {
           <Card className="homepage-card" data-aos="fade-left" data-aos-anchor-placement="bottom-bottom">
             <Card.Content>
               <Card.Header>Always Acessible</Card.Header>
-              <Card.Description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec posuere ligula. Pellentesque nisl odio, eleifend quis ligula sit amet, sagittis maximus lectus. 
-                Phasellus risus quam, sodales et lectus eu, venenatis aliquam tellus. Vestibulum sit amet velit sed quam dapibus ornare sit amet non neque. Aliquam iaculis tellus nec 
-                dui cursus sagittis. Praesent sed varius erat. Suspendisse potenti. Nunc maximus fermentum ullamcorper. In porta tellus malesuada tincidunt volutpat. Donec molestie a 
-                diam non varius. Quisque dignissim leo et libero tristique convallis. Donec scelerisque luctus mauris vitae porttitor. Duis varius consectetur tortor vitae volutpat. 
-                Donec a posuere turpis, nec tempor elit. Pellentesque ac massa dolor. Suspendisse condimentum risus nisi, vel varius turpis molestie vitae. Suspendisse pellentesque 
-                consequat tristique. Sed enim sapien, ornare ut volutpat porttitor, tincidunt sit amet magna. Fusce risus felis, porta quis nisi quis, sagittis dapibus tortor.
+              <Card.Description>
+                Accessibility is one of the tenets of how we build for the web. And it's not just the right thing 
+                to do, it's the law. Title III of the ADA prohibits disability-based discrimination in places of 
+                public accomadation, and this extends to your website.
+                <br />
+                <br />
+                Protect yourself from ADA-based lawsuits. All of our apps undergo an automated 8-point testing process
+                to identify accessibility issues before they become a concern, as well as rigorous manual testing. You 
+                can rest easy knowing your presence on the web is accessible to all. 
               </Card.Description>
             </Card.Content>
           </Card>
@@ -94,21 +97,27 @@ const Home = () => {
           <Card className="homepage-card" data-aos="fade-right" data-aos-anchor-placement="bottom-bottom">
             <Card.Content>
               <Card.Header>Always Up-To-Date</Card.Header>
-              <Card.Description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec posuere ligula. Pellentesque nisl odio, eleifend quis ligula sit amet, sagittis maximus lectus. 
-                Phasellus risus quam, sodales et lectus eu, venenatis aliquam tellus. Vestibulum sit amet velit sed quam dapibus ornare sit amet non neque. Aliquam iaculis tellus nec 
-                dui cursus sagittis. Praesent sed varius erat. Suspendisse potenti. Nunc maximus fermentum ullamcorper. In porta tellus malesuada tincidunt volutpat. Donec molestie a 
-                diam non varius. Quisque dignissim leo et libero tristique convallis. Donec scelerisque luctus mauris vitae porttitor. Duis varius consectetur tortor vitae volutpat. 
-                Donec a posuere turpis, nec tempor elit. Pellentesque ac massa dolor. Suspendisse condimentum risus nisi, vel varius turpis molestie vitae. Suspendisse pellentesque 
-                consequat tristique. Sed enim sapien, ornare ut volutpat porttitor, tincidunt sit amet magna. Fusce risus felis, porta quis nisi quis, sagittis dapibus tortor.
+              <Card.Meta>Start doing business in real-time</Card.Meta>
+            </Card.Content>
+            <Card.Content>
+              <Card.Description>
+                Keep in touch with your customers using our blazing-fast communication features. From
+                real-time customer support chat to online bill pay and account status, your customers will stay informed 
+                and up-to-date. 
+                <br />
+                <br />
+                Making business decisions requires data. The availability, reliability, and accuracy of your data can make 
+                or break you. Our real-time data visualization features keep you informed so that you can always have a 
+                clear picture of the path ahead.
               </Card.Description>
             </Card.Content>
           </Card>
           <div className="bullets-right">  
             <h2>Features</h2>
             <ul>
-              <li>Apps are built to work offline</li>
-              <li>SLA 99.999% availability</li>
-              <li>Another feature</li>
+              <li>Real-time features to connect you with your market</li>
+              <li>Customers stay informed about your latest products and services</li>
+              <li>Stay on top of your business needs with data visualization</li>
             </ul>
           </div>
         </div>
