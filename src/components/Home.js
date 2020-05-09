@@ -82,15 +82,14 @@ const Home = () => {
             </Card.Content>
             <Card.Content>
               <Card.Description>
-                Accessibility is one of the tenets of how we build for the web. And it's not just the right thing 
-                to do, it's the law. Title III of the ADA prohibits disability-based discrimination in places of 
-                public accomadation, and this extends to your website.
+                Accessibility is one of the most important tenets of modern web design. And it's not just the right 
+                thing to do, it's the law. Title III of the ADA prohibits disability-based discrimination in places 
+                of public accomadation, and this extends to your website.
                 <br />
                 <br />
-                Protect yourself from ADA-based lawsuits and avoid alienating your most vulnerable customers. All of 
-                our apps undergo an automated 8-point testing process to identify accessibility issues before they 
-                become a concern, as well as rigorous manual testing. You can rest easy knowing your presence on the 
-                web is accessible to all. 
+                Protect yourself from ADA-based lawsuits and avoid alienating your most vulnerable customers. All apps 
+                undergo an automated 8-point testing process to identify accessibility issues before they become a concern, 
+                as well as rigorous manual testing. You can rest easy knowing your presence on the web is accessible to all. 
               </Card.Description>
             </Card.Content>
           </Card>
@@ -111,13 +110,13 @@ const Home = () => {
             </Card.Content>
             <Card.Content>
               <Card.Description>
-                Keep in touch with your customers using our blazing-fast communication features. From
+                Keep in touch with your customers by utilizing blazing-fast communication features. From
                 real-time customer support chat to online bill pay and account status, your customers will stay informed 
                 and up-to-date. 
                 <br />
                 <br />
                 Making business decisions requires data. The availability, reliability, and accuracy of your data can make 
-                or break you. Our real-time data visualization features keep you informed so that you can always have a 
+                or break you. Get real-time data visualization features that keep you informed so that you can always have a 
                 clear picture of the path ahead.
               </Card.Description>
             </Card.Content>
