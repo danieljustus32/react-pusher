@@ -58,10 +58,10 @@ const Home = () => {
                 to waste dealing with buggy interfaces and downtime. 
                 <br />
                 <br />
-                Our apps are built to provide the highest possible level of availability, so you can be confident 
+                You need to provide the highest possible level of availability, so you can be confident 
                 that you'll be there for your customers when they need you. All apps are built to provide basic 
-                functionality even when a user goes offline, and our serverless backend system allows for a 
-                consistent, dependable online presence.
+                functionality even when a user goes offline, and built on a serverless backend system allows for 
+                a consistent, dependable online presence.
               </Card.Description>
             </Card.Content>
           </Card>
