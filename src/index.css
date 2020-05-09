@@ -183,21 +183,21 @@ h1 {
   -webkit-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75) !important;
   -moz-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75) !important;
   box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75) !important;
-  margin: 0 2em 0;
+  margin: 0 5em 0;
   width: 100%;
 }
 
 .card-left-section-container {
   display: flex;
   justify-content: flex-start;
-  margin: 20em 0;
+  margin: 30em 0;
 }
 
 .card-right-section-container {
   display: flex;
   justify-content: flex-end;
   flex-flow: row-reverse;
-  margin: 10em 0;
+  margin: 15em 0;
 }
 
 .bullets-right {
@@ -224,6 +224,7 @@ h1 {
   flex: 1;
   list-style-type: none;
   margin: auto 0;
+  padding: 0;
 }
 
 #copyright {
@@ -329,10 +330,6 @@ h1 {
   
   #learn-more {
     margin: 8em auto 0; 
-  }
-
-  .footer-list {
-    padding: 0;
   }
 }
   
