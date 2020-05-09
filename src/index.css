@@ -94,7 +94,7 @@ h1 {
 
 #hero {
   position: relative;
-  height: 100vh;
+  height: 90vh;
   background-image: url("./images/traffic.jpeg");
   background-repeat: no-repeat;
 }
@@ -187,13 +187,13 @@ h1 {
 .card-left-section-container {
   display: flex;
   justify-content: flex-start;
-  margin: 8em 0;
+  margin: 15em 0 15em;
 }
 
 .card-right-section-container {
   display: flex;
   justify-content: flex-end;
-  margin: 20em 0;
+  margin: 10em 0 10em;
 }
 
 .bullets-right {
@@ -288,6 +288,22 @@ h1 {
 
   #divider {
     width: 35%;
+  }
+
+  .card-left-section-container {
+    display: block;
+  }
+
+  .card-right-section-container {
+    display: block;
+  }
+
+  .bullets-left {
+    display: block;
+  }
+
+  .bullets-right {
+    display: block;
   }
 }
 

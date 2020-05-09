@@ -38,6 +38,14 @@ const Home = () => {
       </section>  
       <div className="page-content">
         <div className="card-left-section-container">
+          <div className="bullets-right">  
+            <h2>Features</h2>
+            <ul>
+              <li>Apps are built to work offline</li>
+              <li>High-performance edge network backend</li>
+              <li>Continuous integration allows for new features on the fly</li>
+            </ul>
+          </div>
           <Card className="homepage-card" data-aos="fade-right" data-aos-anchor-placement="bottom-bottom">
             <Card.Content>
               <Card.Header>Always Available</Card.Header>
@@ -57,14 +65,6 @@ const Home = () => {
               </Card.Description>
             </Card.Content>
           </Card>
-          <div className="bullets-right">  
-            <h2>Features</h2>
-            <ul>
-              <li>Apps are built to work offline</li>
-              <li>High-performance edge network backend</li>
-              <li>Continuous integration allows for new features on the fly</li>
-            </ul>
-          </div>
         </div>
         <div className="card-right-section-container">
           <div className="bullets-left">
@@ -96,6 +96,14 @@ const Home = () => {
           </Card>
         </div>
         <div className="card-left-section-container">
+          <div className="bullets-right">  
+            <h2>Features</h2>
+            <ul>
+              <li>Real-time features to connect you with your market</li>
+              <li>Customers stay informed about your latest products and services</li>
+              <li>Stay on top of your business needs with data visualization</li>
+            </ul>
+          </div>
           <Card className="homepage-card" data-aos="fade-right" data-aos-anchor-placement="bottom-bottom">
             <Card.Content>
               <Card.Header>Always Up-To-Date</Card.Header>
@@ -114,14 +122,6 @@ const Home = () => {
               </Card.Description>
             </Card.Content>
           </Card>
-          <div className="bullets-right">  
-            <h2>Features</h2>
-            <ul>
-              <li>Real-time features to connect you with your market</li>
-              <li>Customers stay informed about your latest products and services</li>
-              <li>Stay on top of your business needs with data visualization</li>
-            </ul>
-          </div>
         </div>
       </div>
     </Fragment>
