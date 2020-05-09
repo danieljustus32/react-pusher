@@ -178,22 +178,25 @@ h1 {
   min-height: 75vh;
 }
 
-.homepage-card {
+.ui.card.homepage-card {
   -webkit-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75) !important;
   -moz-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75) !important;
   box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75) !important;
+  margin: 0 2em 0;
+  width: 100%;
 }
 
 .card-left-section-container {
   display: flex;
   justify-content: flex-start;
-  margin: 15em 0 15em;
+  margin: 20em 0;
 }
 
 .card-right-section-container {
   display: flex;
   justify-content: flex-end;
-  margin: 10em 0 10em;
+  flex-flow: row-reverse;
+  margin: 10em 0;
 }
 
 .bullets-right {
@@ -305,14 +308,34 @@ h1 {
   .bullets-right {
     display: block;
   }
+
+  .ui.card.homepage-card {
+    width: 75%;
+    margin: 3em auto 0;
+  }
 }
 
-@media only screen and (max-width: 361px) {
+@media only screen and (max-width: 375px) {
+  body {
+    font-size: 0.7em;
+  }
+  
   #learn-more {
     margin: 8em auto 0; 
   }
 
-  .homepage-card {
-    width: 90% !important;
+  .footer-list {
+    padding: 0;
+  }
+}
+  
+
+@media only screen and (max-width: 320px) {
+  body {
+    font-size: 0.6em;
+  }
+
+  .ui.card.homepage-card {
+    width: 50%;
   }
 }
