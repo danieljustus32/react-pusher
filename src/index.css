@@ -21,7 +21,7 @@ h1 {
   sans-serif;
   color: white;
   font-size: 8em;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 #navbar {
@@ -40,30 +40,25 @@ h1 {
 }
 
 #hero {
-  height: 110vh;
-}
-
-#learn-more {
-  display: flex;
-  margin: 20em auto 0; 
-  justify-content: center;
-  font-size: 1.5em;
-  font-weight: 100;
-  opacity: 0.8;
-}
-
-#chevron-container {
-  display: flex;
-}
-
-#downward-chevron {
-  margin: 0 auto;
   position: relative;
-  animation: chevron 1s alternate ease-in-out infinite;
+  height: 100vh;
+  background-image: url("./images/traffic.jpeg");
+  background-repeat: no-repeat;
 }
 
-.page-content {
-  padding: 0 5% 0;
+#hero-overlay {
+  background-color: #692CD1;
+  opacity: 0.6;
+  height: 100%;
+}
+
+#login-request-container {
+  position: absolute;
+  top: 0;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 0 100px 0;
 }
 
 #login-request-container {
@@ -74,7 +69,65 @@ h1 {
 }
 
 #login-request {
+  -webkit-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
   width: 30%;
+}
+
+#hero-header {
+  position: absolute;
+  top: 15%;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+#learn-more {
+  position: absolute;
+  top: 60%;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  font-size: 1.5em;
+  font-weight: 100;
+  opacity: 0.7;
+}
+
+#divider-container {
+  position: absolute;
+  top: 66%;
+  margin: 0 auto;
+  width: 100%;
+  opacity: 0.7;
+}
+
+#divider {
+  width: 15%;
+}
+
+#chevron-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  position: absolute;
+  top: 70%;
+}
+
+#downward-chevron {
+  margin: 0 auto;
+  position: relative;
+  animation: chevron 1s alternate ease-in-out infinite;
+}
+
+.page-content {
+  padding: 0 25% 0;
+}
+
+.homepage-card {
+  -webkit-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75) !important;
+  -moz-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75) !important;
+  box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75) !important;
 }
 
 .card-left-section-container {
@@ -101,21 +154,19 @@ h1 {
 /*Animations */
 @-webkit-keyframes chevron {
   0%   { opacity: 0; top: 10px; }
-  100% { opacity: 1; top: 0px; }
+  100% { opacity: 0.7; top: 0px; }
 }
 @-moz-keyframes chevron {
   0%   { opacity: 0; top: 10px; }
-  100% { opacity: 1; top: 0px; }
+  100% { opacity: 0.7; top: 0px; }
 }
 @-o-keyframes chevron {
   0%   { opacity: 0; top: 10px; }
-  100% { opacity: 1; top: 0px; }
+  100% { opacity: 0.7; top: 0px; }
 }
 @keyframes chevron {
-  0%   { opacity: 0; }
-  100% { opacity: 1; }
   0%   { opacity: 0; top: 10px; }
-  100% { opacity: 1; top: 0px;}
+  100% { opacity: 0.7; top: 0px;}
 }
 
 /* Media Rules */
@@ -126,6 +177,10 @@ h1 {
   
   #login-request {
     width: 90%;
+  }
+
+  #divider {
+    width: 35%;
   }
 }
 
