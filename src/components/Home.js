@@ -80,15 +80,19 @@ const Home = () => {
           <Card className="homepage-card" data-aos="fade-left" data-aos-anchor-placement="bottom-bottom">
             <Card.Content>
               <Card.Header>Always Acessible</Card.Header>
+              <Card.Meta>Provide great service to everyone</Card.Meta>
+            </Card.Content>
+            <Card.Content>
               <Card.Description>
                 Accessibility is one of the tenets of how we build for the web. And it's not just the right thing 
                 to do, it's the law. Title III of the ADA prohibits disability-based discrimination in places of 
                 public accomadation, and this extends to your website.
                 <br />
                 <br />
-                Protect yourself from ADA-based lawsuits. All of our apps undergo an automated 8-point testing process
-                to identify accessibility issues before they become a concern, as well as rigorous manual testing. You 
-                can rest easy knowing your presence on the web is accessible to all. 
+                Protect yourself from ADA-based lawsuits and avoid alienating your most vulnerable customers. All of 
+                our apps undergo an automated 8-point testing process to identify accessibility issues before they 
+                become a concern, as well as rigorous manual testing. You can rest easy knowing your presence on the 
+                web is accessible to all. 
               </Card.Description>
             </Card.Content>
           </Card>
