@@ -229,7 +229,7 @@ h1 {
 #copyright {
   flex: 1;
   position: relative;
-  top: 60%;
+  top: 50%;
   color: #000;
   height: 2em;
   text-align: center;
@@ -274,10 +274,6 @@ h1 {
 
   .page-content {
     padding: 0 10% 0;
-  }
-
-  #copyright {
-    top: 40%;
   }
 }
 
