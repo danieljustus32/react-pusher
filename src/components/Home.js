@@ -55,7 +55,7 @@ const Home = () => {
                 Our apps are built to provide the highest possible level of availability, so you can be confident 
                 that you'll be there for your customers when they need you. All apps are built to provide basic 
                 functionality even when a user goes offline, and our serverless backend system allows for a 
-                consistent, dependable online presence. Learn more
+                consistent, dependable online presence.
               </Card.Description>
             </Card.Content>
           </Card>
@@ -63,8 +63,8 @@ const Home = () => {
             <h2>Features</h2>
             <ul>
               <li>Apps are built to work offline</li>
-              <li>SLA 99.999% availability</li>
-              <li>Another feature</li>
+              <li>High-performance edge network backend</li>
+              <li>Continuous integration allows for new features on the fly</li>
             </ul>
           </div>
         </div>
