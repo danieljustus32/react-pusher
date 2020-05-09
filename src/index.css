@@ -271,9 +271,13 @@ h1 {
   body {
     font-size: 0.9em;
   }
-  
+
   .page-content {
     padding: 0 10% 0;
+  }
+
+  #copyright {
+    top: 40%;
   }
 }
 
