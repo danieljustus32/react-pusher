@@ -5,6 +5,12 @@ import * as serviceWorker from "./serviceWorker";
 import { Auth0Provider } from "./react-auth0-spa";
 import config from "./auth_config.json";
 import History from "./utils/History";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import "./index.css";
+
+// Installed fonts
+require("typeface-montserrat");
 
 // A function that routes the user to the right place
 // after login
@@ -15,6 +21,9 @@ const onRedirectCallback = appState => {
       : window.location.pathname
   );
 };
+
+// Animate-on-scroll library
+AOS.init();
 
 ReactDOM.render(
   <Auth0Provider

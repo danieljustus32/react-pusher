@@ -8,22 +8,24 @@ import {
 
 const NavBar = () => {
   const { isAuthenticated, loginWithRedirect, logout } = useAuth0();
+  // TODO: Probably use window.location.pathname here
   const [activeItem, setActiveItem] = useState(window.location.href);
   
   
   return (
-    <Menu> 
+    <Menu id="navbar" borderless> 
       <Menu.Item
+        className="navlink"
         as={Link}
         to="/"
         name="home"
-        /* The regexp in the next line matches url params that are added when redirecting from the Auth0 login page */
         active={activeItem === process.env.REACT_APP_URL || activeItem.includes(process.env.REACT_APP_URL + "?code=")}
         onClick={() => setActiveItem(process.env.REACT_APP_URL)}
       >         
       </Menu.Item>
     {isAuthenticated && (   
       <Menu.Item
+        className="navlink"
         as={Link}
         to="/profile"
         name="profile"
@@ -32,13 +34,13 @@ const NavBar = () => {
       >
       </Menu.Item>
     )}  
-      <Menu.Item position="right">
+      <Menu.Item position="right" id="auth-button">
       {!isAuthenticated && (
         <Button primary onClick={() => loginWithRedirect({})}>Log in</Button>
       )}
       {isAuthenticated && <Button onClick={() => logout()}>Log out</Button>}
       </Menu.Item>
-      </Menu>
+    </Menu>
   );
 };
 
