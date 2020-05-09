@@ -2,7 +2,6 @@ import React, { Fragment } from "react";
 import { useAuth0 } from "../react-auth0-spa";
 import {
   Card,
-  Image,
   Message
 } from "semantic-ui-react";
 import chevron from "../images/chevron.svg"
@@ -11,7 +10,11 @@ const Home = () => {
   const { loading, user } = useAuth0();
 
   if (loading) {
-    return <div>Loading...</div>;
+    return (
+      <svg className="loading-wheel-viewbox" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <circle className="loading-wheel"cx="50" cy="50" r="45"/>
+      </svg>
+    );
   }
 
   return (
@@ -40,7 +43,7 @@ const Home = () => {
           <Card className="homepage-card" data-aos="fade-right" data-aos-anchor-placement="bottom-bottom">
             <Card.Content>
               <Card.Header>Always Available</Card.Header>
-              <Card.Meta>Never miss a sale again</Card.Meta>
+              <Card.Meta>Never miss a sale</Card.Meta>
             </Card.Content>
             <Card.Content>
               <Card.Description>

@@ -39,6 +39,55 @@ h1 {
   justify-content: center;
 }
 
+/* Loading wheel */
+.loading-wheel {
+  animation: 1.2s ease-in-out infinite both loading-wheel-circle-animation;
+  fill: transparent;
+  stroke: #FFF;
+  stroke-width: 10;
+  stroke-dasharray: 283;
+  stroke-linecap: round;
+  transform-origin: 50% 50%;
+}
+
+.loading-wheel-viewbox {
+  animation: 2s linear infinite svg-viewbox-animation;
+  position: absolute;
+  top: 50%;
+  left: 42%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 15%;
+}
+
+/* Loading Wheel Animations */
+
+@keyframes loading-wheel-circle-animation {
+  0%,
+  25% {
+      stroke-dashoffset: 280;
+      transform: rotate(0);
+  }
+  50%,
+  75% {
+      stroke-dashoffset: 75;
+      transform: rotate(45deg);
+  }
+  100% {
+      stroke-dashoffset: 280;
+      transform: rotate(360deg);
+  }
+}
+
+@keyframes svg-viewbox-animation {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg)
+  }
+}
+
 #hero {
   position: relative;
   height: 100vh;

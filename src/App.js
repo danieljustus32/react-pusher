@@ -1,5 +1,7 @@
 import React from "react";
+// Main Components
 import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
 import PrivateRoute from "./components/PrivateRoute";
 
 import { Router, Route, Switch } from "react-router-dom";
@@ -19,6 +21,9 @@ const App = () => {
           <Route path="/" component={Home} exact />
           <PrivateRoute path="/profile" component={Profile} />
         </Switch>
+        <footer>
+          <Footer />
+        </footer>
       </Router>
     </div>
   );
