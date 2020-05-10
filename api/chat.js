@@ -15,8 +15,11 @@ const channels = new Channels({
 })
 
 module.exports = (req, res) => {
-  const data = req.body
-  channels.trigger('event-channel', 'event-name', data, () => {
-    res.status(200).end('sent event successfully')
-  })
+  const payload = req.body
+  channels.trigger('chat', 'message', payload, () => {
+    res.send(payload);
+    res.status(200).send("Message sent successfully");
+  }).catch(
+    () => {res.status(500).send("Server error");}
+  )
 }
